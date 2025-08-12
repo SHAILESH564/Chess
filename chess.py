@@ -575,7 +575,6 @@ def handle_click(pos):
         return 
     r, c = square
     r = 7 - r  # Invert row for display
-    print(f"Clicked on square: {square} at position {pos}: {r}, {c}")
     current_player = player1 if turn %2 == 1 else player2 
     other_player = player1 if player2 == current_player else player2
     if not selected:
